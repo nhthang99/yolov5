@@ -1,0 +1,34 @@
+##################### DATASET #####################
+
+path: dataset/degree_info_extraction/document_detection
+
+train:
+  # Phase 1 - Degree of Bachelor and Associate
+  - phase1_DH_CD/train
+  # Phase 2 - Degree of High school
+  - phase2_THPT/train
+
+val:
+  # Phase 1 - Degree of Bachelor and Associate
+  - phase1_DH_CD/valid
+  # Phase 2 - Degree of High school
+  - phase2_THPT/valid
+
+test:
+  # Phase 1 - Degree of Bachelor and Associate
+  - phase1_DH_CD/test
+  # Phase 2 - Degree of High school
+  - phase2_THPT/test
+
+##################### TRAINING CONFIG #####################
+# Classes
+nc: 6  # number of classes
+names: [
+  'DEG_TYPE_1',
+  'DEG_TYPE_2',
+  'THPT_TYPE_1',
+  'THPT_TYPE_2',
+  'THPT_TYPE_3',
+  'THPT_TYPE_4',
+  'DOCUMENT'
+]
