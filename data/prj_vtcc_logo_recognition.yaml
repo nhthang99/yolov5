@@ -1,0 +1,55 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: dataset/prj_vtcc_logo_recognition
+train: # train images (relative to 'path')
+  - MAFC_2/train
+  - TOP20_LOGO3K/train
+  - LOGO_BAO_HIEM/train
+val: # val images (relative to 'path')
+  - MAFC_2/valid
+  - TOP20_LOGO3K/valid
+  - LOGO_BAO_HIEM/valid
+test: # test images (optional)
+  - MAFC_2/test
+  - TOP20_LOGO3K/test
+  - LOGO_BAO_HIEM/test
+
+# Classes
+names:
+  0: LOGO_Jus-Rol
+  1: LOGO_benuron
+  2: LOGO_Cafe Coffee Day
+  3: LOGO_perdolan
+  4: LOGO_paralen
+  5: LOGO_shi hui da
+  6: LOGO_square one organic
+  7: LOGO_Bulls-Eye Barbecue
+  8: LOGO_Fox's Biscuits
+  9: LOGO_benuron-2
+  10: LOGO_zendium
+  11: LOGO_thomapyrin
+  12: HDBank
+  13: Sacombank
+  14: Vietcombank
+  15: VietinBank
+  16: MB Bank
+  17: Techcombank
+  18: BIDV
+  19: Agribank
+  20: Shinhan Bank
+  21: LOGO_Dai-ichi Life
+  22: LOGO_ACELife
+  23: LOGO_Frudential
+  24: LOGO_BaoViet
+  25: LOGO_AIA
+  26: LOGO_ManuLife
+  27: LOGO_Frudential-2
+  28: LOGO_Hanwha
+  29: LOGO_FWD
+  30: LOGO_Chubb
+  31: LOGO_PhuHung
+  32: LOGO_CathayLife
+  33: LOGO_Generali
+  34: LOGO_Generali-2
+  35: LOGO_Hanwha-2
+  36: LOGO_SunLife-2
+  37: LOGO_MB
