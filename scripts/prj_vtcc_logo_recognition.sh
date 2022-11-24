@@ -15,6 +15,15 @@ python train.py --weights weights/pretrained_weights/yolov5s.pt \
                 --multi-scale \
                 --name prj_vtcc_logo_recognition
 
+# YOLOv5m
+CUDA_VISIBLE_DEVICES=1,2
+python train.py --weights weights/pretrained_weights/yolov5m.pt \
+                --cfg models/yolov5m.yaml \
+                --data data/prj_vtcc_logo_recognition.yaml \
+                --imgsz 640 \
+                --multi-scale \
+                --name prj_vtcc_logo_recognition
+                --batch-size 8
 
 # YOLOv5s6
 CUDA_VISIBLE_DEVICES=0,2
