@@ -284,7 +284,7 @@ def run(
     if acc_eval:
         tp, fp = confusion_matrix.tp_fp()
         acc = tp / (tp + fp)
-        mean_acc = sum(tp) / (sum(tp) / sum(fp))
+        mean_acc = sum(tp) / (sum(tp) + sum(fp))
     # Print results
     pf = '%22s' + '%11i' * 2 + '%11.3g' * (4 if not acc_eval else 5) # print format
     if not acc_eval:
